@@ -1,0 +1,93 @@
+
+<div id="header">
+	<div id="menu"">
+		<div id="home_link"
+			onclick="javascript:window.location.href='http://assoc.fontainecaron.free.fr'">&nbsp;</div>
+		<div id="categories">
+			<ul id="jMenu">
+			
+				<!-- HISTORIQUE -->
+				<BOUCLE_HISTORIQUE(RUBRIQUES){titre_mot=RUBRIQUE_HISTORIQUE}{tout}>
+				<li>
+					<a>#TITRE</a>
+					<ul>
+						<BOUCLE_historique_articles(ARTICLES){id_rubrique}{par num titre}>
+						<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+						</BOUCLE_historique_articles>
+						<!-- Boucle sur les sous-rubriques -->
+						<BOUCLE_historique_ss_rubriques(RUBRIQUES){id_parent}>
+							<BOUCLE_historique_ss_rubriques_articles(ARTICLES){id_rubrique}{par num titre}>
+							<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+							</BOUCLE_historique_ss_rubriques_articles>
+						</BOUCLE_historique_ss_rubriques>
+					</ul>
+				</li>
+				</BOUCLE_HISTORIQUE>
+
+				<!-- LOTISSEMENT -->
+				<BOUCLE_LOTISSEMENT(RUBRIQUES){titre_mot=RUBRIQUE_LOTISSEMENT}{tout}>
+				<li>
+					<a>#TITRE</a>
+					<ul>
+						<!-- Boucle sur les articles -->
+						<BOUCLE_lotissement_articles(ARTICLES){id_rubrique}{par num titre}>
+						<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+						</BOUCLE_lotissement_articles>
+						<!-- Boucle sur les sous-rubriques -->
+						<BOUCLE_lotissement_ss_rubriques(RUBRIQUES){id_parent}>
+							<BOUCLE_lotissement_ss_rubriques_articles(ARTICLES){id_rubrique}{par num titre}>
+							<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+							</BOUCLE_lotissement_ss_rubriques_articles>
+						</BOUCLE_lotissement_ss_rubriques>
+					</ul>
+				</li>
+				</BOUCLE_LOTISSEMENT>
+
+				<!-- EVENEMENTS -->
+				<BOUCLE_EVENEMENTS(RUBRIQUES){titre_mot=RUBRIQUE_EVENEMENTS}{tout}>
+				<li>
+					<a>#TITRE</a>
+					<ul>
+						<BOUCLE_evenements_articles(ARTICLES){id_rubrique}{par num titre}>
+						<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+						</BOUCLE_evenements_articles>
+						<!-- Boucle sur les sous-rubriques -->
+						<BOUCLE_evenements_ss_rubriques(RUBRIQUES){id_parent}>
+							<BOUCLE_evenements_ss_rubriques_articles(ARTICLES){id_rubrique}{par num titre}>
+							<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+							</BOUCLE_evenements_ss_rubriques_articles>
+						</BOUCLE_evenements_ss_rubriques>
+					</ul>
+				</li>
+				</BOUCLE_EVENEMENTS>
+
+				<!-- QUARTIER -->
+				<BOUCLE_QUARTIER(RUBRIQUES){titre_mot=RUBRIQUE_QUARTIER}{tout}>
+				<li>
+					<a>#TITRE</a>
+					<ul>
+						<BOUCLE_quartier_articles(ARTICLES){id_rubrique}{par num titre}>
+						<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+						</BOUCLE_quartier_articles>
+						<!-- Boucle sur les sous-rubriques -->
+						<BOUCLE_quartier_ss_rubriques(RUBRIQUES){id_parent}>
+							<BOUCLE_quartier_ss_rubriques_articles(ARTICLES){id_rubrique}{par num titre}>
+							<li><a href="#URL_ARTICLE">[(#TITRE|supprimer_numero)]</a></li>
+							</BOUCLE_quartier_ss_rubriques_articles>
+						</BOUCLE_quartier_ss_rubriques>
+					</ul>
+				</li>
+				</BOUCLE_QUARTIER>
+
+
+<!-- 				<li> -->
+<!-- 					<a>LE FORUM</a> -->
+<!-- 					<ul> -->
+<!-- 					</ul> -->
+<!-- 				</li> -->
+			</ul>
+		</div>
+
+
+	</div>
+</div>

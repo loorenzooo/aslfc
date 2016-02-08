@@ -1,0 +1,26 @@
+		<div id="sidebar">
+			<div id="login">
+			    [(#SESSION{id_auteur}|oui) 
+			    	<div id="name">
+			    		#SESSION{nom}
+			    	</div> 
+			    	<div id="link">
+			    		<a href='#URL_LOGOUT'>Se déconnecter</a>
+			    	</div> 
+			    ]
+				[(#SESSION{id_auteur}|non) 
+					<div id="link">
+						<a href="#URL_PAGE{authentification}">Se connecter</a>
+					</div> 
+				]
+				
+			</div>
+			<BOUCLE_ACTUALITE(RUBRIQUES){titre_mot=RUBRIQUE_ACTUALITE}{tout}>
+				<h1>#TITRE</h1>
+				<BOUCLE_actualite_articles(ARTICLES){id_rubrique}{par num titre}>
+				<h2>> [(#TITRE|supprimer_numero)]</h2>
+				<p>#TEXTE</p>
+<!-- 				<div class="link">Lire la suite</div> -->
+				</BOUCLE_actualite_articles>
+			</BOUCLE_ACTUALITE>
+		</div>

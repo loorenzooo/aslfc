@@ -1,0 +1,78 @@
+.jMenu {
+	display: table;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.jMenu li {
+	display: table-cell;
+	background-color: #B71234;
+	margin: 0;
+	list-style: none;
+	width: 158px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.jMenu li a {
+/* 	padding: 10px 15px; */
+	display: block;
+	background-color: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 12px
+		border-right-color: white;
+	border-right-width: 2px;
+	border-right-style: solid;
+	text-decoration: none;
+}
+
+.jMenu li a:hover {
+	background-color: #ECDEBB
+}
+
+.jMenu li:hover>a {
+	background-color: #ECDEBB;
+	color: #B71234;
+}
+
+.jMenu li ul {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	padding: 0;
+	margin: 0;
+	list-style: none
+}
+
+.jMenu li ul li {
+	background-color: #ECDEBB;
+	display: block;
+	border-bottom: 1px solid white;
+	padding: 0;
+	list-style: none;
+	position: relative
+}
+
+.jMenu li ul li a {
+	font-size: 11px;
+	text-transform: none;
+	display: block;
+/* 	padding: 7px; */
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	color:#B71234;
+	text-decoration: none
+}
+
+.jMenu li ul li a.isParent {
+	background-color: #3a3a3a
+}
+
+.jMenu li ul li a:hover {
+	background-color: #d1c4a6;
+	border-top: 1px solid #322f32;
+	border-bottom: 1px solid #322f32
+}

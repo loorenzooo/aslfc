@@ -1,0 +1,311 @@
+@CHARSET "UTF-8";
+
+body,html {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #F5F5F0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 191px;
+	background-color: green;
+	position: relative;
+	background-image: url("../images/lfc-header.gif");
+}
+
+#header_left {
+	height: 191px;
+	width: 297px;
+	color: white;
+	font-weight: bold;
+}
+
+#header_left #line1 {
+	font-size: 40px;
+	height: 30px;
+	padding-top: 5px;
+	padding-left: 75px;
+}
+
+#header_left #line2 {
+	font-size: 45px;
+	height: 50px;
+	padding-left: 35px;
+}
+
+#header_left #line3 {
+	font-size: 45px;
+	height: 77px;
+	padding-left: 70px;
+}
+
+#header_left #line3 span {
+	vertical-align: top;
+	line-height: 32px;
+	margin-left: 8px;
+}
+
+#header_left #line4 {
+	font-size: 18px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#welcome {
+	color: white;
+	font-size: 30px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+#welcome span {
+	font-weight: bold;
+}
+
+#main {
+	/* 	float: right; */
+	display: table-cell;
+	width: 663px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+#main_large {
+	/* 	float: right; */
+	display: table-cell;
+	width: 960px;
+	background-color: #ECDEBB;
+}
+
+#main_large legend {
+	display: none;
+}
+
+#main_large fieldset {
+	border: 0 none;
+}
+
+#main_large li {
+	list-style-type: none;
+}
+
+.main_center {
+	background-color: white;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 230px;
+}
+
+#main_large p.boutons {
+	margin-top:0;
+	margin-left: 53px;
+}
+
+#main_large #spip_pass {
+	display: none;
+}
+
+#main img {
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#main h1 {
+	font-size: 40px;
+	color: #53682B;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+#main p {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify;
+	font-size: 14px;
+	/* 		column-count: 3; */
+	/* 		-moz-column-count: 3; Firefox */
+	/* 		-webkit-column-count: 3; Safari and Chrome */
+}
+
+#menu {
+	background-color: #B71234;
+	height: 25px;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 663px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#menu .item {
+	height: 25px;
+	border-right-color: white;
+	border-right-width: 2px;
+	border-right-style: solid;
+	display: inline-block;
+	width: 117px;
+	text-align: center;
+	line-height: 25px;
+}
+
+#menu .item.last {
+	border-right-style: none;
+}
+
+#home_link {
+	background-image: url("../images/lfc-home.jpg");
+	width: 30px;
+	height: 25px;
+	border-right-color: white;
+	border-right-width: 2px;
+	border-right-style: solid;
+	float: left;
+}
+
+#categories {
+/* 	float: right */
+}
+
+#menu .item.home_link:HOVER {
+	cursor: pointer;
+}
+
+#sidebar {
+	/* 	float: left; */
+	display: table-cell;
+	width: 297px;
+	background-color: #ECDEBB;
+	vertical-align: top;
+}
+
+#sidebar h1,#sidebar h2 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#sidebar h1 {
+	color: #B71234;
+	border-bottom-color: #3366FF;
+	border-bottom-style: dotted;
+	border-bottom-width: 2px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	display: block;
+	font-size: 40px;
+	border-bottom-color: #005293;
+	display: block;
+}
+
+#sidebar h2 {
+	color: #005293;
+	font-size: 15px;
+	margin-bottom: 0px;
+	height: 10px;
+	display: block;
+}
+
+#sidebar p {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify;
+	font-size: 12px;
+	margin-bottom: 0px;
+	display: block;
+}
+
+#sidebar .link {
+	color: #B71234;
+	text-align: right;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-style: italic;
+	font-size: 12px;
+	border-bottom-color: #254bbb;
+	border-bottom-style: dotted;
+	border-bottom-width: 2px;
+	padding-bottom: 5px;
+	display: block;
+}
+
+#sidebar .link:HOVER {
+	cursor: pointer;
+}
+
+#footer {
+	background-image: url("../images/lfc-footer.jpg");
+	height: 40px;
+}
+
+.document_link {
+	color: #005293;
+}
+
+#login {
+	color: #B71234;
+	text-align: right;
+	font-style: italic;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-left:10px;
+	margin-top: 5px;
+	border-bottom-color: #254bbb;
+	border-bottom-style: dotted;
+	padding-bottom:5px;
+	border-bottom-width: 2px;
+	height:14px;
+}
+
+#login #name {
+	float: left;
+}
+
+#login #link {
+	float: right;
+	color: #005293;
+}
+
+#login #link a:VISITED {
+	color: #005293;
+}
+
+#login:HOVER {
+	cursor: pointer;
+}
+
+#fieldset {
+	color: #005293;
+	background-color: #ECDEBB;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 570px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#fieldset .editer_password {
+	margin-top: 5px;
+}
+
+#fieldset a:VISITED {
+	color : #005293;
+}
+
+#formulaire_login input {
+	//background-color: #ECDEBB;
+}
